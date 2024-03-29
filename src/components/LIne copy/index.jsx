@@ -3,7 +3,7 @@ import { LineChart } from "@mui/x-charts/LineChart";
 
 export default function BasicLineChart2() {
   return (
-    <div className="bg-white w-[100%] mt-6 rounded-[8px]">
+    <div className="bg-white w-[100%]  rounded-[8px]">
       <div>
         <div className="pt-4">
           <p className="text-[26px] w-[85%] m-auto  text-[#2e4765] font-semibold">
@@ -15,6 +15,7 @@ export default function BasicLineChart2() {
         </div>
       </div>
       <LineChart
+        className="xl:w-[500px]"
         xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
         series={[
           {

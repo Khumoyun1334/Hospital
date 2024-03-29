@@ -21,6 +21,11 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import Dashboard1 from "../../Pages/Dashboard1";
 import Dashboard2 from "../../Pages/Dashboard2";
 import Futter from "../Futter";
+import Login from "../../Pages/Login";
+import Register from "../../Pages/Register";
+import Forget from "../../Pages/ForgetPassword";
+import Faq from "../../Pages/Faq";
+import Chat from "../../Pages/Chat";
 
 const drawerWidth = 240;
 
@@ -59,7 +64,7 @@ function ResponsiveDrawer(props) {
               <NavLink
                 style={{
                   width: "100%",
-                  padding: "10px 28px",
+                  padding: "10px 20px",
                 }}
                 to={"/"}
                 className={({ isActive, isPending }) =>
@@ -77,7 +82,7 @@ function ResponsiveDrawer(props) {
               <NavLink
                 style={{
                   width: "100%",
-                  padding: "10px 28px",
+                  padding: "10px 20px",
                   marginTop: "20px",
                 }}
                 to={"/dashboard"}
@@ -90,6 +95,101 @@ function ResponsiveDrawer(props) {
                 }
               >
                 <span>Dashboard2</span>
+              </NavLink>
+            </div>
+            <div className="w-full">
+              <NavLink
+                style={{
+                  width: "100%",
+                  padding: "10px 20px",
+                  marginTop: "20px",
+                }}
+                to={"/login"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
+                    : "text-black flex gap-5 items-center"
+                }
+              >
+                <span>Login</span>
+              </NavLink>
+            </div>
+            <div className="w-full">
+              <NavLink
+                style={{
+                  width: "100%",
+                  padding: "10px 20px",
+                  marginTop: "20px",
+                }}
+                to={"/regis"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
+                    : "text-black flex gap-5 items-center"
+                }
+              >
+                <span>Register</span>
+              </NavLink>
+            </div>
+            <div className="w-full">
+              <NavLink
+                style={{
+                  width: "100%",
+                  padding: "10px 20px",
+                  marginTop: "20px",
+                }}
+                to={"/for"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
+                    : "text-black flex gap-5 items-center"
+                }
+              >
+                <span>Forget</span>
+              </NavLink>
+            </div>
+            <div className="w-full">
+              <NavLink
+                style={{
+                  width: "100%",
+                  padding: "10px 20px",
+                  marginTop: "20px",
+                }}
+                to={"/chat"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
+                    : "text-black flex gap-5 items-center"
+                }
+              >
+                <span>Chat</span>
+              </NavLink>
+            </div>
+            <div className="w-full">
+              <NavLink
+                style={{
+                  width: "100%",
+                  padding: "10px 20px",
+                  marginTop: "20px",
+                }}
+                to={"/faq"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
+                    : "text-black flex gap-5 items-center"
+                }
+              >
+                <span>Faq</span>
               </NavLink>
             </div>
           </div>
@@ -207,6 +307,11 @@ function ResponsiveDrawer(props) {
           <Routes>
             <Route path="/" element={<Dashboard1 />} />
             <Route path="/dashboard" element={<Dashboard2 />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/regis" element={<Register />} />
+            <Route path="/for" element={<Forget />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
           <Futter />
         </Box>
