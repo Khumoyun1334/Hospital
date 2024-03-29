@@ -226,7 +226,7 @@ function ResponsiveDrawer(props) {
           </IconButton>
           <div className="flex items-center mt-5 justify-between w-full">
             <div className="xl:w-[32%] w-[50%]">
-              <div className="flex gap-4 items-center px-8 w-[100%] rounded-3xl bg-[#F5F7FD] ">
+              <div className="md:flex hidden gap-4 items-center px-8 w-[100%] rounded-3xl bg-[#F5F7FD] ">
                 <BiSearch color="black" size={"23px"} />
                 <input
                   placeholder="Search hero...."
@@ -236,7 +236,7 @@ function ResponsiveDrawer(props) {
               </div>
             </div>
             <div className="text-black">
-              <div className="flex gap-9">
+              <div className="flex md:gap-9 gap-2">
                 <img
                   src="https://demo.dashboardpack.com/hospital-html/img/icon/bell.svg"
                   alt=""

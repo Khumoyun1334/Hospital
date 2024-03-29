@@ -15,7 +15,7 @@ function Accordion({ title, content }) {
       >
         {title}
       </button>
-      {!isOpen && (
+      {isOpen && (
         <div className="accordion__content text-[13px] transition-all w-[96%] mt-4 m-auto font-light">
           {content}
         </div>
