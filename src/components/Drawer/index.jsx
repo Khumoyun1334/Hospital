@@ -26,6 +26,8 @@ import Register from "../../Pages/Register";
 import Forget from "../../Pages/ForgetPassword";
 import Faq from "../../Pages/Faq";
 import Chat from "../../Pages/Chat";
+import MailBox from "../../Pages/MailBox";
+import { Dropdown } from "rsuite";
 
 const drawerWidth = 240;
 
@@ -60,138 +62,166 @@ function ResponsiveDrawer(props) {
         </div>
         <div className="mt-12 flex flex-col gap-12">
           <div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                }}
-                to={"/"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4 items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
+            <div>
+              <p
+                style={{ fontFamily: "rajdhani, sans-serif" }}
+                className="text-[#43BCC2] font-bold text-[20px]"
               >
-                <span>Dashboard1</span>
-              </NavLink>
+                Dashboard
+              </p>
             </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/dashboard"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
+            <Dropdown className="mt-3" title="Dashboard">
+              <div className="px-7">
+                <Dropdown.Item>
+                  <div className="w-full mt-2">
+                    <NavLink
+                      style={{}}
+                      to={"/"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Dashboard1</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+                <Dropdown.Item className="mt-4">
+                  <div className="w-full">
+                    <NavLink
+                      style={{}}
+                      to={"/dashboard"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Dashboard2</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+              </div>
+            </Dropdown>
+            <div className="mt-3">
+              <p
+                style={{ fontFamily: "rajdhani, sans-serif" }}
+                className="text-[#43BCC2] font-bold text-[20px]"
               >
-                <span>Dashboard2</span>
-              </NavLink>
+                Apilcation
+              </p>
             </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/login"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
-              >
-                <span>Login</span>
-              </NavLink>
-            </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/regis"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
-              >
-                <span>Register</span>
-              </NavLink>
-            </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/for"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
-              >
-                <span>Forget</span>
-              </NavLink>
-            </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/chat"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
-              >
-                <span>Chat</span>
-              </NavLink>
-            </div>
-            <div className="w-full">
-              <NavLink
-                style={{
-                  width: "100%",
-                  padding: "10px 20px",
-                  marginTop: "20px",
-                }}
-                to={"/faq"}
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "bg-[#E6F4FF] flex gap-4  items-center text-[#43BCC2] border-r-2 border-[#43BCC2] p-3"
-                    : "text-black flex gap-5 items-center"
-                }
-              >
-                <span>Faq</span>
-              </NavLink>
-            </div>
+            <Dropdown className="mt-3" title="Pages">
+              <div className="mt-2 px-7">
+                <Dropdown.Item>
+                  <div className="w-full">
+                    <NavLink
+                      style={{}}
+                      to={"/login"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Login</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <div className="w-full mt-4">
+                    <NavLink
+                      style={{}}
+                      to={"/regis"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Register</span>
+                    </NavLink>
+                  </div>
+                  <div className="w-full mt-4">
+                    <NavLink
+                      style={{}}
+                      to={"/for"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Forget</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+              </div>
+            </Dropdown>
+            <Dropdown className="mt-3" title="Apilcations">
+              <div className="mt-2 px-7">
+                <Dropdown.Item>
+                  <div className="w-full">
+                    <NavLink
+                      style={{}}
+                      to={"/chat"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Chat</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <div className="w-full mt-4">
+                    <NavLink
+                      style={{}}
+                      to={"/box"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Mail Box</span>
+                    </NavLink>
+                  </div>
+                  <div className="w-full mt-4">
+                    <NavLink
+                      style={{}}
+                      to={"/faq"}
+                      className={({ isActive, isPending }) =>
+                        isPending
+                          ? "pending"
+                          : isActive
+                          ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                          : "text-black flex gap-5 text-[14px] items-center"
+                      }
+                    >
+                      <span>Faq</span>
+                    </NavLink>
+                  </div>
+                </Dropdown.Item>
+              </div>
+            </Dropdown>
           </div>
           <div></div>
         </div>
@@ -220,7 +250,12 @@ function ResponsiveDrawer(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: "none" } }}
+            sx={{
+              mr: 2,
+              display: { md: "none" },
+              color: "black",
+              marginTop: "20px",
+            }}
           >
             <MenuIcon />
           </IconButton>
@@ -312,6 +347,7 @@ function ResponsiveDrawer(props) {
             <Route path="/for" element={<Forget />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/chat" element={<Chat />} />
+            <Route path="/box" element={<MailBox />} />
           </Routes>
           <Futter />
         </Box>

@@ -6,7 +6,10 @@ export default function BasicLineChart2() {
     <div className="bg-white w-[100%]  rounded-[8px]">
       <div>
         <div className="pt-4">
-          <p className="text-[26px] w-[85%] m-auto  text-[#2e4765] font-semibold">
+          <p
+            style={{ fontFamily: "rajdhani, sans-serif" }}
+            className="text-[26px] w-[85%] m-auto  text-[#2e4765] font-semibold"
+          >
             Hospital Survey
           </p>
         </div>

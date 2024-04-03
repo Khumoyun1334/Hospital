@@ -10,7 +10,9 @@ function Accordion({ title, content }) {
   return (
     <div className="accordion">
       <button
-        className="accordion__button w-full transition-all bg-[#F5F7FB]  p-3 rounded-full text-left px-9"
+        className={`${
+          isOpen ? "bg-red-800 " : "bg-[#F5F7FB]"
+        } accordion__button w-full transition-all   p-3 rounded-full text-left px-9`}
         onClick={toggleAccordion}
       >
         {title}

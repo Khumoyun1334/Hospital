@@ -106,7 +106,10 @@ export default class ApexChart extends React.Component {
         <div className="bg-white mt-9 p-7 rounded-[8px]" id="chart">
           <div>
             <div>
-              <p className="text-[26px] text-[#2e4765] font-semibold">
+              <p
+                style={{ fontFamily: "rajdhani, sans-serif" }}
+                className="text-[26px] text-[#2e4765] font-semibold"
+              >
                 Hospital Survey
               </p>
             </div>

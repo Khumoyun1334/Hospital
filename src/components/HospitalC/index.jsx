@@ -1,5 +1,6 @@
 import React from "react";
-import HosStyle from "./HosStyle";
+
+import CaruselC from "../CarusleC";
 
 function HospitalC() {
   const data = [
@@ -19,19 +20,26 @@ function HospitalC() {
   ];
   return (
     <div className="bg-white mt-10 rounded-[8px] p-7">
-      <div>
+      <div className="flex justify-between">
         <div>
-          <p className="text-[26px] text-[#2e4765] font-semibold">
+          <p
+            style={{ fontFamily: "rajdhani, sans-serif" }}
+            className="text-[26px] text-[#2e4765] font-semibold"
+          >
             Hospital Survey
           </p>
         </div>
+        <div className="flex gap-3">
+          <button className="p-1 px-3 bg-[#EFF1F7] rounded-lg font-bold text-[21px]">
+            {"<"}
+          </button>
+          <button className="p-1 px-3 bg-[#EFF1F7] rounded-lg font-bold text-[21px]">
+            {">"}
+          </button>
+        </div>
       </div>
-      <hr className="mt-4" />
-      <div className="grid grid-cols-2 py-7 mt-6 gap-7 md:grid-cols-3 xl:grid-cols-4">
-        {data.map((elem, ind) => (
-          <HosStyle key={ind + 1} name={elem.name} status={elem.status} />
-        ))}
-      </div>
+      <hr className="mt-4 " />
+      <CaruselC />
     </div>
   );
 }
