@@ -20,7 +20,7 @@ function HospitalC() {
   ];
   return (
     <div className="bg-white mt-10 rounded-[8px] p-7">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <div>
           <p
             style={{ fontFamily: "rajdhani, sans-serif" }}
@@ -38,7 +38,7 @@ function HospitalC() {
           </button>
         </div>
       </div>
-      <hr className="mt-4 " />
+      <hr className="" />
       <CaruselC />
     </div>
   );

@@ -113,7 +113,7 @@ export default class ApexChart extends React.Component {
                 Hospital Survey
               </p>
             </div>
-            <hr className="mt-5" />
+            <hr className="" />
             <div className="grid grid-cols-1 mt-7 md:grid-cols-4">
               <div>
                 <p className="text-[30px] text-center font-semibold text-[#2e4765]">

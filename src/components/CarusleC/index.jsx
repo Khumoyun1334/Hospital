@@ -11,7 +11,7 @@ import { Navigation } from "swiper/modules";
 export default function CaruselC() {
   return (
     <>
-      <div className=" p-5">
+      <div className="py-2">
         <Swiper
           loop={true}
           breakpoints={{
@@ -36,7 +36,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -60,7 +60,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -84,7 +84,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -108,7 +108,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -132,7 +132,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -156,7 +156,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -181,7 +181,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -205,7 +205,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -229,7 +229,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img
@@ -253,7 +253,7 @@ export default function CaruselC() {
             <div>
               <div>
                 <div
-                  className={` bg-white p-7 py-12  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
+                  className={` bg-white p-7 py-3  shadow-[0_7px_15px_rgba(80,143,244,.15)]`}
                 >
                   <div className="flex justify-center">
                     <img

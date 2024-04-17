@@ -8,7 +8,6 @@ import BasicLineChart from "../../components/LIne";
 import BasicLineChart2 from "../../components/LIne copy";
 import Component from "../../components/Table";
 import Table from "../../components/Table";
-import CaruselC from "../../components/CarusleC";
 
 function Dashboard1() {
   return (

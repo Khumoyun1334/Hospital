@@ -28,6 +28,16 @@ import Faq from "../../Pages/Faq";
 import Chat from "../../Pages/Chat";
 import MailBox from "../../Pages/MailBox";
 import { Dropdown } from "rsuite";
+import Buttons from "../../Pages/Buttons";
+import DropDown from "../../Pages/DropDown";
+import Badges from "../../Pages/Badges";
+import Loading from "../../Pages/Loading";
+import { DropdownButton, DropdownItem } from "react-bootstrap";
+import Not from "../../Pages/Not";
+import Progeress from "../../Pages/Progress";
+import Carusel from "../../Pages/Carusel";
+import Cards from "../../Pages/Cards";
+import Pagination from "../../Pages/Pagination";
 
 const drawerWidth = 240;
 
@@ -222,6 +232,164 @@ function ResponsiveDrawer(props) {
                 </Dropdown.Item>
               </div>
             </Dropdown>
+
+            <div className="mt-3">
+              <p
+                style={{ fontFamily: "rajdhani, sans-serif" }}
+                className="text-[#43BCC2] font-bold text-[20px]"
+              >
+                Components
+              </p>
+            </div>
+            <Dropdown className="mt-3" title="UI Components">
+              <Dropdown.Item>
+                <div class="dropdown">
+                  <button class="dropbtn">Elemnts</button>
+                  <div class="dropdown-content">
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/buttt"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Buttons</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/drop"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Dropdowns</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/badges"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Badges</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/load"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Loading</span>
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown mt-2">
+                  <button className="dropbtn">Components</button>
+                  <div className="dropdown-content">
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/not"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Notifaction</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/progress"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Progress bar</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/carusel"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Carusels</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/cards"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Cards</span>
+                      </NavLink>
+                    </div>
+                    <div className="w-full">
+                      <NavLink
+                        style={{}}
+                        to={"/pag"}
+                        className={({ isActive, isPending }) =>
+                          isPending
+                            ? "pending"
+                            : isActive
+                            ? "flex gap-4 items-center text-[14px] text-[#43BCC2]"
+                            : "text-black flex gap-5 text-[14px] items-center"
+                        }
+                      >
+                        <span>Pagination</span>
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+              </Dropdown.Item>
+            </Dropdown>
           </div>
           <div></div>
         </div>
@@ -259,7 +427,7 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <div className="flex items-center mt-5 justify-between w-full">
+          <div className="flex items-center mt-3 justify-between w-full">
             <div className="xl:w-[32%] w-[50%]">
               <div className="md:flex hidden gap-4 items-center px-8 w-[100%] rounded-3xl bg-[#F5F7FD] ">
                 <BiSearch color="black" size={"23px"} />
@@ -348,6 +516,15 @@ function ResponsiveDrawer(props) {
             <Route path="/faq" element={<Faq />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/box" element={<MailBox />} />
+            <Route path="/buttt" element={<Buttons />} />
+            <Route path="/drop" element={<DropDown />} />
+            <Route path="/badges" element={<Badges />} />
+            <Route path="/load" element={<Loading />} />
+            <Route path="/not" element={<Not />} />
+            <Route path="/progress" element={<Progeress />} />
+            <Route path="/carusel" element={<Carusel />} />
+            <Route path="/cards" element={<Cards />} />
+            <Route path="/pag" element={<Pagination />} />
           </Routes>
           <Futter />
         </Box>
